@@ -1,0 +1,25 @@
+{
+  "name": "symlink-versions",
+  "version": "0.0.1",
+  "description": "Create a new version by symlinking unchanged and copying changed files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "keywords": [
+    "symlink",
+    "backup"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "dependencies": {
+    "fs-extra": "^0.18.0",
+    "glob": "^5.0.3",
+    "moment": "^2.9.0",
+    "promise": "^6.1.0"
+  },
+  "devDependencies": {
+    "rmdir": "^1.1.0",
+    "tape": "^3.5.0"
+  }
+}
