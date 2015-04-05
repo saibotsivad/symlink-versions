@@ -52,7 +52,15 @@ Next, change the file `file1.txt`, and after running the process again you'll ha
 the modified file `file1.txt`, and a symlink `file2.txt` that links to the first version's folder.
 
 Finally, inside your backup folder you have two version folders, one with two real files, and one with
-a real file and a symlink to the original file.
+a real file and a symlink to the original file:
+
+	backups/
+		20150404103453/
+			file1.txt # real file
+			file2.txt # real file
+		20150404103602/
+			file1.txt # real file
+			file2.txt # symlink -> backups/20150404103453/file2.txt
 
 ## license
 
