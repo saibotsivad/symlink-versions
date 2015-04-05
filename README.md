@@ -48,8 +48,11 @@ There are only the three options:
 Suppose you have a folder with the files `file1.txt` and `file2.txt`. After running the process the first
 time, you'll have a folder that contains both files.
 
-Now change the file `file1.txt`, and after running the process again you'll have a folder that contains
+Next, change the file `file1.txt`, and after running the process again you'll have a folder that contains
 the modified file `file1.txt`, and a symlink `file2.txt` that links to the first version's folder.
+
+Finally, inside your backup folder you have two version folders, one with two real files, and one with
+a real file and a symlink to the original file.
 
 ## license
 
