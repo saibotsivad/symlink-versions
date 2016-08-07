@@ -1,6 +1,6 @@
 {
   "name": "symlink-versions",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Create a new version by symlinking unchanged files, and copying changed files.",
   "main": "index.js",
   "scripts": {
