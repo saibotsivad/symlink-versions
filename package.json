@@ -6,6 +6,10 @@
   "scripts": {
     "test": "tape test/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:saibotsivad/symlink-versions.git"
+  },
   "keywords": [
     "symlink",
     "backup"

@@ -8,31 +8,37 @@ you can make a new folder where everything unchanged is a symlink.
 
 Install the normal npm way:
 
-	npm install symbolic-versions
+```sh
+npm install symbolic-versions
+```
 
 ## use
 
 Specify the place to backup files (must be a created folder) and the folder
 to scan for changes:
 
-	var versioner = require('symbolic-versions')
-	var options = {
-		backupFolder: '/path/to/backup',
-		fileFolder: '/path/to/monitored/files'
-	}
-	versioner(options, function(err, version) {
-		// "version" is the folder created inside the "backupFolder"
-	})
+```js
+var versioner = require('symbolic-versions')
+var options = {
+	backupFolder: '/path/to/backup',
+	fileFolder: '/path/to/monitored/files'
+}
+versioner(options, function(err, version) {
+	// "version" is the folder created inside the "backupFolder"
+})
+```
 
 The function will return a promise, if you want to do that instead:
 
-	versioner(options)
-		.then(function(version) {
-			// "version" is the folder created inside the "backupFolder"
-		})
-		.catch(function(err) {
-			// handle errors
-		})
+```js
+versioner(options)
+	.then(function(version) {
+		// "version" is the folder created inside the "backupFolder"
+	})
+	.catch(function(err) {
+		// handle errors
+	})
+```
 
 ## options
 
@@ -54,14 +60,16 @@ the modified file `file1.txt`, and a symlink `file2.txt` that links to the first
 Finally, inside your backup folder you have two version folders, one with two real files, and one with
 a real file and a symlink to the original file:
 
-	backups/
-		20150404103453/
-			file1.txt # real file
-			file2.txt # real file
-		20150404103602/
-			file1.txt # real file
-			file2.txt # symlink -> backups/20150404103453/file2.txt
+```txt
+backups/
+	20150404103453/
+		file1.txt # real file
+		file2.txt # real file
+	20150404103602/
+		file1.txt # real file
+		file2.txt # symlink -> backups/20150404103453/file2.txt
+```
 
 ## license
 
-Released under the [Very Open License](http://veryopenlicense.com)
+[VOL](http://veryopenlicense.com)
