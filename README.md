@@ -1,5 +1,7 @@
 # symbolic-versions
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/saibotsivad/symlink-versions.svg)](https://greenkeeper.io/)
+
 If you have a folder you want to backup and you want *all* old versions to
 be available as folders, you can copy files every time you do a backup, or
 you can make a new folder where everything unchanged is a symlink.
