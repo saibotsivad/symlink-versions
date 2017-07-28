@@ -17,13 +17,13 @@
   "author": "saibotsivad",
   "license": "VOL",
   "dependencies": {
-    "fs-extra": "^0.18.0",
-    "glob": "^5.0.3",
+    "fs-extra": "^4.0.0",
+    "glob": "^7.1.2",
     "moment": "^2.9.0",
-    "promise": "^6.1.0"
+    "promise": "^8.0.1"
   },
   "devDependencies": {
     "rmdir": "^1.1.0",
-    "tape": "^3.5.0"
+    "tape": "^4.7.0"
   }
 }
